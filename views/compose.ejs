@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+</head>
+
+<body>
+<div class="form-group">
+  <h1>Compose</h1>
+  <form action="/compose" method="post">
+    <label for="">Title</label><br />
+    <input class="form-control" type="text" name="postTitle"><br />
+    <label for="">Post</label><br />
+    <textarea class="form-control" name="postMsg"></textarea><br />
+    <button class="btn btn-primary" type="submit" name="button">Publish</button>
+  </form>
+</div>
+</body>
+
+</html>
+<%- include("partials/footer") -%>
